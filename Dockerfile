@@ -1,7 +1,6 @@
 FROM ubuntu
 RUN apt-get -y update
-RUN apt-get install -y python-pip
-RUN apt-get install -y python-netsnmp
+RUN apt-get install -y python-pip python-netsnmp snmp
 RUN pip install snmp_exporter
 RUN mkdir /snmp-exporter
 VOLUME /snmp-exporter
