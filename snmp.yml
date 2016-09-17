@@ -1,6 +1,8 @@
 ---
 # Default module: interface stats and uptime.
 default:
+  auth:
+    community: PRTG
   walk:
     - 1.3.6.1.2.1.1.3
     - 1.3.6.1.2.1.2
